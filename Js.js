@@ -1,4 +1,9 @@
-<script language="javascript">
-function openNav() {document.getElementById("mySidenav").style.width="28%";}
-function closeNav() {document.getElementById("mySidenav").style.width="0%";}
-	</script>
+const navbar=document.getElementById("mySidenav");
+function myFunction() {
+	var x = navbar;
+	if (x.style.width === "0%") {
+	  x.style.width = "28%";
+	} else {
+	  x.style.width = "0%";
+	}
+  }

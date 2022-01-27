@@ -24,21 +24,17 @@ p{font-family:Candara;font-size:18px;text-align:justify;margin-left:20%;margin-r
 k{font-family:Candara;color:#22e590;font-size:15px;text-align:center;margin-left:20%;style:"font-size:10vw"}
 nav{font-family:Candara;color:black;font-size:25px;style:"font-size:10vw"}
 body{font-family:"Lato",Candara;}
-.sidenav{height:100%;width:0;position:fixed;z-index:;top:0;left:0;background-color:#ffffff;overflow-x:hidden;transition:0.9s;padding-top:60px;text-align:center;}
+.sidenav{height:100%;width:0;position:fixed;top:0;left:0;background-color:#ffffff;overflow-x:hidden;transition:0.9s;padding-top:60px;text-align:center;}
 .sidenav a{  padding:8px 8px 8px 32px;text-decoration:none;font-size:25px;color:#000000;display:block;transition:0.3s;}
 .sidenav a:hover{color:#f1f1f1;}
 .sidenav .closebtn{position:absolute;top:0;right:25px;font-size:36px;margin-left:50px;}
 @media screen and(max-height:450px){.sidenav{ padding-top:15px;}
 .sidenav a{ font-size:18px;}}
 	</style>
-	<script language="javascript">
-function openNav() {document.getElementById("mySidenav").style.width="28%";}
-function closeNav() {document.getElementById("mySidenav").style.width="0%";}
-	</script>
 	</head>
-<body background="bgcolor="#f3Eee0"">
-<div id="mySidenav" class="sidenav">
-<a  href="Paul's Personal Website.html" class="closebtn" onClick="closenav()"> &times; </a>
+<body background="#f3Eee0">
+<div onclick="myFunction()" id="mySidenav" class="sidenav">
+<a class="closebtn" onClick="closenav()"> &times; </a>
 <a href="#">&#127968 Home</a>
 <a href="#Profile">Profile</a>
 <a href="#Experiences">Experiences</a>
@@ -62,11 +58,11 @@ function closeNav() {document.getElementById("mySidenav").style.width="0%";}
 <br><br><br>
 	<h7>Read More<br>&#8964<br>&#8964</h7>
 <br><br><br><br>
-	</center>
+	
 </div> 
 
 <div id="Profile" style="width:100%; background:#fffafa;">
-<span style="font-size:30px; cursor:pointer" onClick="openNav()" >
+<span style="font-size:30px; cursor:pointer" onclick="myFunction()" >
 <nav>&#9776; Menu</nav>
 </span>
 <hr>
@@ -274,5 +270,6 @@ Hackerrank : <a target="_blank " href="https://www.hackerrank.com/paulthomas2000
 <br><br>
 <hr>
 </div>
+<script src="./Js.js"></script>
 </body>
 </html> 
