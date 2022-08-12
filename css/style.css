@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(300px);
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+p{
+    font-family: 'Cabin', sans-serif;
+
+}
+.child {
+    scroll-snap-align: center;
+}
+
+.container {
+    width: min(1200px, 92%)
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    background-image: url("https://github.com/PaulThomas20002/Personal-Website/blob/main/csb.png?raw=true");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.5);
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: .5rem;
+}
+
+main h1 {
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    color: #22e590;
+    z-index: 6;
+    backdrop-filter: blur(5px);
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 2px;
+}
+header h3{
+    font-size: 1.4rem;
+}
+header a{
+    color: inherit;
+    text-decoration: none;
+    font-weight: inherit;
+}
+header a:hover{
+    color: black;
+    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.header_color {
+    background: rgba(0, 0, 0, 0.5);
+
+}
+.header_color a:hover{
+    color: white;
+    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.hamburger button {
+    color: #22e590 !important;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+section:nth-child(4){
+    padding-bottom: 1rem;
+}
+
+section h2,
+section h3 {
+    color: #22e590;
+    margin-bottom: 20px;
+
+    font-family: 'Russo One', sans-serif;
+}
+
+#section1 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+i {
+    max-width: min(768px, 92%);
+}
+
+i span {
+    text-align: right;
+    width: 100%;
+    display: inline-block;
+}
+
+.heading,
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+    font-family: 'Cabin', sans-serif;
+
+}
+
+.content p {
+    max-width: min(768px, 90%);
+}
+
+.line {
+    width: min(768px, 92%);
+    height: 2px;
+    background: #000;
+}
+
+.img-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-box img {
+    width: 300px;
+    height: auto;
+    margin: 30px 0;
+}
+
+#section2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#section2 .content {
+    display: block;
+}
+
+#section2 p {
+    line-height: 1.5rem;
+    margin: 20px 0;
+}
+
+#section2 {
+    background: #f3efe0;
+}
+
+#section3 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#section3 .content {
+    display: flex;
+    justify-content: center;
+    width: min(768px, 92%);
+}
+
+#section3 h3 {
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.arrange p {
+    line-height: 1.5rem;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.arrange {
+    width: 100%;
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+}
+.arrange span{
+    color: #22e590;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 15;
+}
+
+footer a {
+    margin: 20px;
+    font-size: 2.5rem;
+    color: black;
+}
+
+footer a:hover {
+    color: #22e590;
+}
+
+
+
+
+
+@media screen and (min-width:992px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    #close {
+        position: fixed;
+        opacity: 0;
+        z-index: -5;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        height: 50vh;
+        top: 80px;
+        transition: 0.5s ease-in-out;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 5%, 0% 0%);
+        transition: 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+
+    }
+
+    .open {
+        position: absolute !important;
+        opacity: 1 !important;
+        z-index: 4 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        left: 0;
+        transition: 0.5s ease-in-out;
+        color: black;
+        font-weight: bold;
+        height: 50vh;
+        backdrop-filter: blur(5px);
+        background: rgba(225, 225, 225, 0.7);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) !important;
+    }
+    .open a:hover{
+        color: #13915ade;
+    }
+
+    .hamburger {
+        position: relative;
+        z-index: 10 !important;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        background: transparent;
+    }
+
+    .hamburger button {
+        font-size: 1.5rem;
+        background: transparent;
+        border: none;
+    }
+
+    nav ul {
+        position: absolute;
+    }
+
+    nav ul li {
+        margin: 25px;
+    }
+}
+@media screen and (max-width:768px) {
+    main h1 {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:576px) {
+    main h1 {
+        font-size: 2rem;
+    }
+}
