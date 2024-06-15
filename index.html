@@ -1,335 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul Thomas</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkTy9P/p9SUcU/WCkDxzNTmeBnm/cJ/29/3RCEe7RT9Rp7BFlwKbr3vg+Q2TqEGrvP6Lx6Vjqen2P2FQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-
-
-<section id="home">
-    <div class="main">
-        <h1>Paul Thomas</h1>
-    </div>
-
-    <script>
-        function changeBg() {
-            const images = [
-                'url("1.jpg")',
-                'url("2.jpg")',
-                'url("3.jpg")',
-	'url("4.jpg")',
-	'url("5.jpg")',
-	'url("6.jpg")',
-	'url("csb.png")',
-            ];
-            const section = document.querySelector("#home"); // Corrected the querySelector method
-            const bg = images[Math.floor(Math.random() * images.length)];
-            section.style.backgroundImage = bg;
-        }
-        setInterval(changeBg, 500); // Changed interval to 5000 milliseconds (5 seconds)
-    </script>
-</section>
-
-
-   <section id="section1" class="child">
-    <div class="container">
-        <div class="heading">
-            <h2>About Me</h2>
-            <p> I'm a Computer Science Student </p>
-        </div>
-    </div>
- <div class="side-side">
-        <div class="img-box">
-            <img src="6.jpg" alt="Profile Picture">
-        </div>
-        <div class="content">
-        <p>Enthusiastic project management professional with a passion for computer science. Skilled in problem-solving, building strong networks, and clear communication. I thrive in environments that combine technical knowledge with project execution. Seeking opportunities to leverage my skills and contribute to innovative projects. </p>
-        </div>
- </div>       
-</section>
-
-
-<!-- Experience Section -->
-<section id="education">
-<div class="container">
-    <div class="heading">
-        <h2 >Careers</h2>
-        <i>“Your career is a journey, not a destination. Enjoy every step along the way.”
-            <br><br>
-            <span>- Unknown</span>
-        </i>
-    </div>
-    <div class="line"></div>
-    <div class="timeline">
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <h3>2023</h3>
-                <span>Software Intern</span>
-                <p>Edstem Technologies · Internship
-May 2023 - May 2023 · 1 mo 
-Ernakulam, Kerala, India · On-site</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paul Thomas</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkTy9P/p9SUcU/WCkDxzNTmeBnm/cJ/29/3RCEe7RT9Rp7BFlwKbr3vg+Q2TqEGrvP6Lx6Vjqen2P2FQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section id="home">
+            <div class="main">
+                <h1>Paul Thomas</h1>
             </div>
-        </div>
-        <div class="timeline-item right">
-            <div class="timeline-content">
-                <h3>2022</h3>
-                <span>Training and Internship</span>
-                <p>LCC Computer Education Kochi · Internship
-Jun 2022 - Jun 2022 · 1 mo
-Kaladi, Kerala, India · On-site</p>
-            </div>
-        </div>
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <h3>2021</h3>
-                <span>Intershala Student Partner</span>
-                <p>Internshala · Internship
-Aug 2021 - Nov 2021 · 4 mos
-India · Remote.</p>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-
-
-<!-- Education Section -->
-<section id="education">
-<div class="container">
-    <div class="heading">
-        <h2 >Education</h2>
-        <i>"Education is the most powerful weapon which you can use to change the world."
-            <br><br>
-            <span>- Nelson Mandela</span>
-        </i>
-    </div>
-    <div class="line"></div>
-    <div class="timeline">
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <h3>2020 - 2024</h3>
-                <span>Bachelor's Degree in Computer Science</span>
-                <p>Adi Shankara Institute of Engineering and Technology, Kalady
-Bachelor of Technology - BTech, Computer Science and Engineering 
-Oct 2020 - Oct 2024</p>
-            </div>
-        </div>
-        <div class="timeline-item right">
-            <div class="timeline-content">
-                <h3>2018 - 2020</h3>
-                <span>Higher Secondary, Computer Science</span>
-                <p>
-Brahmanandodayam Higher Secondary School, Kalady
-Higher Secondary, Computer Science
-2018 - 2020</p>
-            </div>
-        </div>
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <h3>2006 - 2018</h3>
-                <span>High School</span>
-                <p>
-DEPAUL ENGLISH MEDIUM HIGHER SECONDARY SCHOOL, ANGAMALY 
-High schoo, High School/Secondary Diplomas and Certificates 
-2006 - 2018</p>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-
-
-
-
-<!-- Skills Section -->
-<section id="skills" class="child">
-<div class="container">
-<div class="heading">
-        <h2>Skills</h2>
-        <i>"Ability may get you to the top, but it takes character to keep you there."
-            <br><br>
-            <span>- Unknown</span>
-        </i>
-    </div>
-<div class="line"></div>
-    <div class="container">
-        <div class="content">
-            <div class="skills">
-                <div class="skill-column">
-                    <div class="skill">
-                        <p>Leadership</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-skill-level="100%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <p>TeamWork</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-skill-level="100%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <p>Malayalam Typing</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-skill-level="100%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <p>Communication</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-skill-level="60%"></div>
-                        </div>
-                    </div>
+            <script>
+                function changeBg() {
+                    const images = [
+                        'url("1.jpg")',
+                        'url("2.jpg")',
+                        'url("3.jpg")',
+                'url("4.jpg")',
+                'url("5.jpg")',
+                'url("6.jpg")',
+                'url("csb.png")',
+                    ];
+                    const section = document.querySelector("#home"); // Corrected the querySelector method
+                    const bg = images[Math.floor(Math.random() * images.length)];
+                    section.style.backgroundImage = bg;
+                }
+                setInterval(changeBg, 500); // Changed interval to 5000 milliseconds (5 seconds)
+            </script>
+        </section>
+        <section id="section1" class="child">
+            <div class="container">
+                <div class="heading">
+                    <h2>About Me</h2>
+                    <p> I'm a Computer Science Student </p>
                 </div>
-                <div class="skill-column">
-                    <div class="skill">
-                        <p>HTML5</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-skill-level="100%"></div>
+            </div>
+            <div class="side-side">
+                <div class="img-box">
+                    <img src="6.jpg" alt="Profile Picture">
+                </div>
+                <div class="content">
+                    <p>Enthusiastic project management professional with a passion for computer science. Skilled in problem-solving, building strong networks, and clear communication. I thrive in environments that combine technical knowledge with project execution. Seeking opportunities to leverage my skills and contribute to innovative projects. </p>
+                </div>
+            </div>
+        </section>
+        <!-- Experience Section -->
+        <section id="education">
+            <div class="container">
+                <div class="heading">
+                    <h2 >Careers</h2>
+                    <i>“Your career is a journey, not a destination. Enjoy every step along the way.”
+                    <br><br>
+                    <span>- Unknown</span>
+                    </i>
+                </div>
+                <div class="line"></div>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>2023</h3>
+                            <span>Software Intern</span>
+                            <p>Edstem Technologies · Internship
+                                May 2023 - May 2023 · 1 mo 
+                                Ernakulam, Kerala, India · On-site
+                            </p>
                         </div>
                     </div>
-                    <div class="skill">
-                        <p>C++</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-skill-level="60%"></div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>2022</h3>
+                            <span>Training and Internship</span>
+                            <p>LCC Computer Education Kochi · Internship
+                                Jun 2022 - Jun 2022 · 1 mo
+                                Kaladi, Kerala, India · On-site
+                            </p>
                         </div>
                     </div>
-                    <div class="skill">
-                        <p>CSS</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-skill-level="30%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <p>MySQL</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-skill-level="30%"></div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>2021</h3>
+                            <span>Intershala Student Partner</span>
+                            <p>Internshala · Internship
+                                Aug 2021 - Nov 2021 · 4 mos
+                                India · Remote.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <h3>Language</h3>
-            <div class="skills">
-                <div class="skill-column">
-                    <div class="skill">
-                        <p>Malayalam (Mother Tongue)</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-skill-level="100%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <p>English (Daily Use)</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-skill-level="80%"></div>
-                        </div>
-                    </div>
+        </section>
+        <!-- Education Section -->
+        <section id="education">
+            <div class="container">
+                <div class="heading">
+                    <h2 >Education</h2>
+                    <i>"Education is the most powerful weapon which you can use to change the world."
+                    <br><br>
+                    <span>- Nelson Mandela</span>
+                    </i>
                 </div>
-                <div class="skill-column">
-                    <div class="skill">
-                        <p>Hindi (Survivable)</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-skill-level="60%"></div>
+                <div class="line"></div>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>2020 - 2024</h3>
+                            <span>Bachelor's Degree in Computer Science</span>
+                            <p>Adi Shankara Institute of Engineering and Technology, Kalady
+                                Bachelor of Technology - BTech, Computer Science and Engineering 
+                                Oct 2020 - Oct 2024
+                            </p>
                         </div>
                     </div>
-                    <div class="skill">
-                        <p>Tamil (Survivable)</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-skill-level="60%"></div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>2018 - 2020</h3>
+                            <span>Higher Secondary, Computer Science</span>
+                            <p>
+                                Brahmanandodayam Higher Secondary School, Kalady
+                                Higher Secondary, Computer Science
+                                2018 - 2020
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>2006 - 2018</h3>
+                            <span>High School</span>
+                            <p>
+                                DEPAUL ENGLISH MEDIUM HIGHER SECONDARY SCHOOL, ANGAMALY 
+                                High schoo, High School/Secondary Diplomas and Certificates 
+                                2006 - 2018
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- Skills Section -->
+        <section id="skills" class="child">
+            <div class="container">
+                <div class="heading">
+                    <h2>Skills</h2>
+                    <i>"Ability may get you to the top, but it takes character to keep you there."
+                    <br><br>
+                    <span>- Unknown</span>
+                    </i>
+                </div>
+                <div class="line"></div>
+                <div class="container">
+                    <div class="content">
+                        <div class="skills">
+                            <div class="skill-column">
+                                <div class="skill">
+                                    <p>Leadership</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" data-skill-level="100%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <p>TeamWork</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" data-skill-level="100%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <p>Malayalam Typing</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" data-skill-level="100%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <p>Communication</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" data-skill-level="60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-column">
+                                <div class="skill">
+                                    <p>HTML5</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" data-skill-level="100%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <p>C++</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" data-skill-level="60%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <p>CSS</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" data-skill-level="30%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <p>MySQL</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" data-skill-level="30%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Language</h3>
+                        <div class="skills">
+                            <div class="skill-column">
+                                <div class="skill">
+                                    <p>Malayalam (Mother Tongue)</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" data-skill-level="100%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <p>English (Daily Use)</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" data-skill-level="80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-column">
+                                <div class="skill">
+                                    <p>Hindi (Survivable)</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" data-skill-level="60%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <p>Tamil (Survivable)</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" data-skill-level="60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         </div>
-    </div>
-</div>
-</section>
-   </div>
-
-
-<section id="projects" class="child">
-    <div class="container">
-        <div class="heading">
-            <h2>Projects</h2>
-            <p>Here are some of the projects I've worked on</p>
-        </div>
-        <div class="line"></div>
-        <div class="project-grid">
-            <div class="project-card" onclick="flipCard(this)">
-                <div class="project-inner">
-                    <div class="project-front">
-                        <img src="project1.png" alt="Project 1">
-                        <h3>Exam Guard</h3>
+        <section id="projects" class="child">
+            <div class="container">
+                <div class="heading">
+                    <h2>Projects</h2>
+                    <p>Here are some of the projects I've worked on</p>
+                </div>
+                <div class="line"></div>
+                <div class="project-grid">
+                    <div class="project-card" onclick="flipCard(this)">
+                        <div class="project-inner">
+                            <div class="project-front">
+                                <img src="project1.png" alt="Project 1">
+                                <h3>Exam Guard</h3>
+                            </div>
+                            <div class="project-back">
+                                <h3>Exam Guard</h3>
+                                <p>Developed Offline Lab Exam Monitoring System, resulting in a 50%
+                                    reduction in exam irregularities and enhancing exam integrity by 75%
+                                    through robust security measures.
+                                    Streamlined exam processes through comprehensive monitoring
+                                    functionalities, reducing exam administration time by 40%.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-back">
-                        <h3>Exam Guard</h3>
-                        <p>Developed Offline Lab Exam Monitoring System, resulting in a 50%
-reduction in exam irregularities and enhancing exam integrity by 75%
-through robust security measures.
-Streamlined exam processes through comprehensive monitoring
-functionalities, reducing exam administration time by 40%.</p>
+                    <div class="project-card" onclick="flipCard(this)">
+                        <div class="project-inner">
+                            <div class="project-front">
+                                <img src="project2.png" alt="Project 2">
+                                <h3>Sign Language Recognition system</h3>
+                            </div>
+                            <div class="project-back">
+                                <h3>Sign Language Recognition system</h3>
+                                <p>Created a Sign Language Recognition system leveraging OpenCV
+                                    and Gesture Recognition technology, achieving a recognition
+                                    accuracy of over 95%.
+                                    Reducing the time required for sign language translation by 50%
+                                    compared to previous methods.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="flipCard(this)">
+                        <div class="project-inner">
+                            <div class="project-front">
+                                <img src="project3.png" alt="Project 3">
+                                <h3>Brahma '24 Webpage</h3>
+                            </div>
+                            <div class="project-back">
+                                <h3>Brahma '24 Webpage</h3>
+                                <p>brahma24.live</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="project-card" onclick="flipCard(this)">
-                <div class="project-inner">
-                    <div class="project-front">
-                        <img src="project2.png" alt="Project 2">
-                        <h3>Sign Language Recognition system</h3>
-                    </div>
-                    <div class="project-back">
-                        <h3>Sign Language Recognition system</h3>
-                        <p>Created a Sign Language Recognition system leveraging OpenCV
-and Gesture Recognition technology, achieving a recognition
-accuracy of over 95%.
-Reducing the time required for sign language translation by 50%
-compared to previous methods.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card" onclick="flipCard(this)">
-                <div class="project-inner">
-                    <div class="project-front">
-                        <img src="project3.png" alt="Project 3">
-                        <h3>Brahma '24 Webpage</h3>
-                    </div>
-                    <div class="project-back">
-                        <h3>Brahma '24 Webpage</h3>
-                        <p>brahma24.live</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<script>
-    function flipCard(card) {
-        card.classList.toggle('flipped');
-    }
-</script>
-
-
-
-    <footer id="footer">
-<h4>Don't forget to follow me</h4>
-        <a href="https://github.com/PaulThomas20002"><i class="fab fa-github"></i></a>
-        <a href="mailto:paulthomas.site@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.instagram.com/paul_thomas_20002/"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/paulthomas20002/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/PaulTho68558295"><i class="fa-brands fa-x-twitter"></i></a>
-    </footer>
-
-    <script src="./js/index.js"></script>
-    <script src="https://kit.fontawesome.com/025c12b0bf.js" crossorigin="anonymous"></script>
-
-</body>
-
+        </section>
+        <script>
+            function flipCard(card) {
+                card.classList.toggle('flipped');
+            }
+        </script>
+        <footer id="footer">
+            <h4>Don't forget to follow me</h4>
+            <a href="https://github.com/PaulThomas20002"><i class="fab fa-github"></i></a>
+            <a href="mailto:paulthomas.site@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/paul_thomas_20002/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/paulthomas20002/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/PaulTho68558295"><i class="fa-brands fa-x-twitter"></i></a>
+        </footer>
+        <script src="./js/index.js"></script>
+        <script src="https://kit.fontawesome.com/025c12b0bf.js" crossorigin="anonymous"></script>
+    </body>
 </html>

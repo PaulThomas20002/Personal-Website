@@ -17,17 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 skillLevel.style.width = level;
             }
         });
-    }, { threshold: 0.5 });
+    }, {
+        threshold: 0.5
+    });
 
     skills.forEach(skill => {
         observer.observe(skill);
     });
 });
-
-
-
-
-
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -39,14 +36,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 entry.target.classList.add('visible');
             }
         });
-    }, { threshold: 0.2 });
+    }, {
+        threshold: 0.2
+    });
 
     timelineItems.forEach(item => {
         observer.observe(item);
     });
 });
-
-
-
-
-
