@@ -12,23 +12,7 @@
 </head>
 
 <body>
-    <header id="header">
-        <nav class="container">
-            <div>
-                <h3>Paul Thomas</h3>
-            </div>
-            <ul id="close">
-                <li><a href="#">Home</a></li>
-                <li><a href="#section1">Profile</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Abilities</a></li>
-                <li><a href="#footer">Contact </a></li>
-            </ul>
-            <div class="hamburger">
-                <button onclick="toggle()"><i class="fas fa-bars"></i></button>
-            </div>
-        </nav>
-    </header>
+
 
 <section id="home">
     <div class="main">
@@ -58,23 +42,63 @@
    <section id="section1" class="child">
     <div class="container">
         <div class="heading">
-            <h2>Profile</h2>
+            <h2>About Me</h2>
             <p> I'm a Computer Science Student </p>
         </div>
-        <div class="line"></div>
-        <div class="content">
-            <h3>About me</h3>
-            <p>I am a Computer Science Student. I am a junior programmer with good knowledge of C++ languages. I
-                love structure and order and I also stand for quality. I love spending time on fixing little details
-                and optimizing web apps. Also, I like working in a team, you'll learn faster and much more. </p>
-        </div>
-        <div class="line"></div>
+    </div>
+ <div class="side-side">
         <div class="img-box">
             <img src="6.jpg" alt="Profile Picture">
         </div>
-    </div>
+        <div class="content">
+        <p>Enthusiastic project management professional with a passion for computer science. Skilled in problem-solving, building strong networks, and clear communication. I thrive in environments that combine technical knowledge with project execution. Seeking opportunities to leverage my skills and contribute to innovative projects. </p>
+        </div>
+ </div>       
 </section>
 
+
+<!-- Experience Section -->
+<section id="education">
+<div class="container">
+    <div class="heading">
+        <h2 >Careers</h2>
+        <i>“Your career is a journey, not a destination. Enjoy every step along the way.”
+            <br><br>
+            <span>- Unknown</span>
+        </i>
+    </div>
+    <div class="line"></div>
+    <div class="timeline">
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h3>2023</h3>
+                <span>Software Intern</span>
+                <p>Edstem Technologies · Internship
+May 2023 - May 2023 · 1 mo 
+Ernakulam, Kerala, India · On-site</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <h3>2022</h3>
+                <span>Training and Internship</span>
+                <p>LCC Computer Education Kochi · Internship
+Jun 2022 - Jun 2022 · 1 mo
+Kaladi, Kerala, India · On-site</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h3>2021</h3>
+                <span>Intershala Student Partner</span>
+                <p>Internshala · Internship
+Aug 2021 - Nov 2021 · 4 mos
+India · Remote.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 
 
 <!-- Education Section -->
@@ -91,23 +115,31 @@
     <div class="timeline">
         <div class="timeline-item left">
             <div class="timeline-content">
-                <h3>2010 - 2014</h3>
+                <h3>2020 - 2024</h3>
                 <span>Bachelor's Degree in Computer Science</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                <p>Adi Shankara Institute of Engineering and Technology, Kalady
+Bachelor of Technology - BTech, Computer Science and Engineering 
+Oct 2020 - Oct 2024</p>
             </div>
         </div>
         <div class="timeline-item right">
             <div class="timeline-content">
-                <h3>2014 - 2016</h3>
-                <span>Master's Degree in Software Engineering</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                <h3>2018 - 2020</h3>
+                <span>Higher Secondary, Computer Science</span>
+                <p>
+Brahmanandodayam Higher Secondary School, Kalady
+Higher Secondary, Computer Science
+2018 - 2020</p>
             </div>
         </div>
         <div class="timeline-item left">
             <div class="timeline-content">
-                <h3>2016 - 2018</h3>
-                <span>PhD in Artificial Intelligence</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                <h3>2006 - 2018</h3>
+                <span>High School</span>
+                <p>
+DEPAUL ENGLISH MEDIUM HIGHER SECONDARY SCHOOL, ANGAMALY 
+High schoo, High School/Secondary Diplomas and Certificates 
+2006 - 2018</p>
             </div>
         </div>
     </div>
@@ -219,22 +251,85 @@
     </div>
 </div>
 </section>
+   </div>
 
 
-
+<section id="projects" class="child">
+    <div class="container">
+        <div class="heading">
+            <h2>Projects</h2>
+            <p>Here are some of the projects I've worked on</p>
+        </div>
+        <div class="line"></div>
+        <div class="project-grid">
+            <div class="project-card" onclick="flipCard(this)">
+                <div class="project-inner">
+                    <div class="project-front">
+                        <img src="project1.png" alt="Project 1">
+                        <h3>Exam Guard</h3>
+                    </div>
+                    <div class="project-back">
+                        <h3>Exam Guard</h3>
+                        <p>Developed Offline Lab Exam Monitoring System, resulting in a 50%
+reduction in exam irregularities and enhancing exam integrity by 75%
+through robust security measures.
+Streamlined exam processes through comprehensive monitoring
+functionalities, reducing exam administration time by 40%.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" onclick="flipCard(this)">
+                <div class="project-inner">
+                    <div class="project-front">
+                        <img src="project2.png" alt="Project 2">
+                        <h3>Sign Language Recognition system</h3>
+                    </div>
+                    <div class="project-back">
+                        <h3>Sign Language Recognition system</h3>
+                        <p>Created a Sign Language Recognition system leveraging OpenCV
+and Gesture Recognition technology, achieving a recognition
+accuracy of over 95%.
+Reducing the time required for sign language translation by 50%
+compared to previous methods.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" onclick="flipCard(this)">
+                <div class="project-inner">
+                    <div class="project-front">
+                        <img src="project3.png" alt="Project 3">
+                        <h3>Brahma '24 Webpage</h3>
+                    </div>
+                    <div class="project-back">
+                        <h3>Brahma '24 Webpage</h3>
+                        <p>brahma24.live</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
+
+<script>
+    function flipCard(card) {
+        card.classList.toggle('flipped');
+    }
+</script>
+
+
 
     <footer id="footer">
+<h4>Don't forget to follow me</h4>
         <a href="https://github.com/PaulThomas20002"><i class="fab fa-github"></i></a>
         <a href="mailto:paulthomas.site@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.instagram.com/paul_thomas_20002/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/paulthomas20002/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/PaulTho68558295"><i class="fa-brands fa-x-twitter"></i></a>
     </footer>
 
     <script src="./js/index.js"></script>
     <script src="https://kit.fontawesome.com/025c12b0bf.js" crossorigin="anonymous"></script>
-    <audio autoplay>
-        <source src="dirtyvibe.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+
 </body>
 
 </html>
