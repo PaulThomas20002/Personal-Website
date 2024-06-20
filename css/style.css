@@ -51,66 +51,6 @@ body {
     color: #777;
 }
 
-header {
-    height: 80px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    border-bottom: 1px solid #ddd;
-    backdrop-filter: blur(5px);
-    z-index: 6;
-}
-
-header nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    padding: 0 20px;
-}
-
-header h3 {
-    font-family: 'Russo One', sans-serif;
-    color: #333;
-    font-size: 1.8rem;
-}
-
-header ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-header ul li {
-    margin-left: 20px;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
-
-header .hamburger {
-    display: none;
-}
-
-header .hamburger button {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-header .hamburger i {
-    color: #333;
-}
-
 
 /* Profile Section */
 
@@ -275,32 +215,26 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header ul {
-        display: none;
-        flex-direction: column;
-        background: #fff;
-        position: absolute;
-        top: 80px;
-        right: 20px;
-        width: 200px;
-        border: 1px solid #ddd;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    header ul li {
-        margin: 10px 0;
-    }
-
-    header .hamburger {
-        display: block;
-    }
-
     .main h1 {
         font-size: 2.5rem;
     }
 
     .main h3 {
         font-size: 1.2rem;
+    }
+
+     .side-side {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    padding: 0px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+	.side-side {
+    padding: 0px 10px;
     }
 }
 
@@ -599,7 +533,6 @@ footer a:hover {
     }
 }
 
-
 /* Projects Section */
 #projects .container {
     display: flex;
@@ -732,10 +665,6 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
     }
-
-    .project-card {
-        width: 80%;
-    }
 }
 
 @media (max-width: 480px) {
@@ -743,7 +672,18 @@ footer a:hover {
         font-size: 2rem;
     }
 
-    .project-card {
-        width: 100%;
+    /* Ensures cards are stacked one below the other */
+    #projects .project-grid {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills {
+        flex-direction: column;
+    }
+
+    .skill-column {
+        min-width: 100%;
     }
 }
