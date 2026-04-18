@@ -1,319 +1,585 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Paul Thomas</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkTy9P/p9SUcU/WCkDxzNTmeBnm/cJ/29/3RCEe7RT9Rp7BFlwKbr3vg+Q2TqEGrvP6Lx6Vjqen2P2FQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <section id="home">
-            <div class="main">
-                <h1>Paul Thomas</h1>
-            </div>
-            <script>
-                function changeBg() {
-                    const images = [
-                        'url("1.jpg")',
-                        'url("2.jpg")',
-                        'url("3.jpg")',
-                'url("4.jpg")',
-                'url("5.jpg")',
-                'url("6.jpg")',
-                'url("csb.png")',
-                    ];
-                    const section = document.querySelector("#home"); // Corrected the querySelector method
-                    const bg = images[Math.floor(Math.random() * images.length)];
-                    section.style.backgroundImage = bg;
-                }
-                setInterval(changeBg, 500); // Changed interval to 5000 milliseconds (5 seconds)
-            </script>
-        </section>
-        <section id="section1" class="child">
-            <div class="container">
-                <div class="heading">
-                    <h2>About Me</h2>
-                    <p> I'm a Computer Science Student </p>
-                </div>
-            </div>
-            <div class="side-side">
-                <div class="img-box">
-                    <img src="6.jpg" alt="Profile Picture">
-                </div>
-                <div class="content">
-                    <p>Enthusiastic project management professional with a passion for computer science. Skilled in problem-solving, building strong networks, and clear communication. I thrive in environments that combine technical knowledge with project execution. Seeking opportunities to leverage my skills and contribute to innovative projects. </p>
-                </div>
-            </div>
-        </section>
-        <!-- Experience Section -->
-        <section id="education">
-            <div class="container">
-                <div class="heading">
-                    <h2 >Careers</h2>
-                    <i>“Your career is a journey, not a destination. Enjoy every step along the way.”
-                    <br><br>
-                    <span>- Unknown</span>
-                    </i>
-                </div>
-                <div class="line"></div>
-                <div class="timeline">
-                    <div class="timeline-item left">
-                        <div class="timeline-content">
-                            <h3>2023</h3>
-                            <span>Software Intern</span>
-                            <p>Edstem Technologies · Internship
-                                May 2023 - May 2023 · 1 mo 
-                                Ernakulam, Kerala, India · On-site
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right">
-                        <div class="timeline-content">
-                            <h3>2022</h3>
-                            <span>Training and Internship</span>
-                            <p>LCC Computer Education Kochi · Internship
-                                Jun 2022 - Jun 2022 · 1 mo
-                                Kaladi, Kerala, India · On-site
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left">
-                        <div class="timeline-content">
-                            <h3>2021</h3>
-                            <span>Intershala Student Partner</span>
-                            <p>Internshala · Internship
-                                Aug 2021 - Nov 2021 · 4 mos
-                                India · Remote.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Education Section -->
-        <section id="education">
-            <div class="container">
-                <div class="heading">
-                    <h2 >Education</h2>
-                    <i>"Education is the most powerful weapon which you can use to change the world."
-                    <br><br>
-                    <span>- Nelson Mandela</span>
-                    </i>
-                </div>
-                <div class="line"></div>
-                <div class="timeline">
-                    <div class="timeline-item left">
-                        <div class="timeline-content">
-                            <h3>2020 - 2024</h3>
-                            <span>Bachelor's Degree in Computer Science</span>
-                            <p>Adi Shankara Institute of Engineering and Technology, Kalady
-                                Bachelor of Technology - BTech, Computer Science and Engineering 
-                                Oct 2020 - Oct 2024
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right">
-                        <div class="timeline-content">
-                            <h3>2018 - 2020</h3>
-                            <span>Higher Secondary, Computer Science</span>
-                            <p>
-                                Brahmanandodayam Higher Secondary School, Kalady
-                                Higher Secondary, Computer Science
-                                2018 - 2020
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left">
-                        <div class="timeline-content">
-                            <h3>2006 - 2018</h3>
-                            <span>High School</span>
-                            <p>
-                                DEPAUL ENGLISH MEDIUM HIGHER SECONDARY SCHOOL, ANGAMALY 
-                                High schoo, High School/Secondary Diplomas and Certificates 
-                                2006 - 2018
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Skills Section -->
-        <section id="skills" class="child">
-            <div class="container">
-                <div class="heading">
-                    <h2>Skills</h2>
-                    <i>"Ability may get you to the top, but it takes character to keep you there."
-                    <br><br>
-                    <span>- Unknown</span>
-                    </i>
-                </div>
-                <div class="line"></div>
-                <div class="container">
-                    <div class="content">
-                        <div class="skills">
-                            <div class="skill-column">
-                                <div class="skill">
-                                    <p>Leadership</p>
-                                    <div class="skill-bar">
-                                        <div class="skill-level" data-skill-level="100%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <p>TeamWork</p>
-                                    <div class="skill-bar">
-                                        <div class="skill-level" data-skill-level="100%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <p>Malayalam Typing</p>
-                                    <div class="skill-bar">
-                                        <div class="skill-level" data-skill-level="100%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <p>Communication</p>
-                                    <div class="skill-bar">
-                                        <div class="skill-level" data-skill-level="60%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill-column">
-                                <div class="skill">
-                                    <p>HTML5</p>
-                                    <div class="skill-bar">
-                                        <div class="skill-level" data-skill-level="100%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <p>C++</p>
-                                    <div class="skill-bar">
-                                        <div class="skill-level" data-skill-level="60%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <p>CSS</p>
-                                    <div class="skill-bar">
-                                        <div class="skill-level" data-skill-level="30%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <p>MySQL</p>
-                                    <div class="skill-bar">
-                                        <div class="skill-level" data-skill-level="30%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Language</h3>
-                        <div class="skills">
-                            <div class="skill-column">
-                                <div class="skill">
-                                    <p>Malayalam (Mother Tongue)</p>
-                                    <div class="skill-bar">
-                                        <div class="skill-level" data-skill-level="100%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <p>English (Daily Use)</p>
-                                    <div class="skill-bar">
-                                        <div class="skill-level" data-skill-level="80%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill-column">
-                                <div class="skill">
-                                    <p>Hindi (Survivable)</p>
-                                    <div class="skill-bar">
-                                        <div class="skill-level" data-skill-level="60%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <p>Tamil (Survivable)</p>
-                                    <div class="skill-bar">
-                                        <div class="skill-level" data-skill-level="60%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Paul Thomas — Kernel and Device Driver Engineer & Creative Technologist. Building digital experiences that matter." />
+  <meta name="keywords" content="developer, portfolio, kernel, device tree, device driver, frontend, backend, react, node" />
+  <meta name="author" content="Paul Thomas" />
+  <title>Paul Thomas — Developer & Creator</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">PT</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <div class="loader-text">Crafting Experience<span class="dots"></span></div>
+    </div>
+  </div>
+
+  <!-- ========== CUSTOM CURSOR ========== -->
+  <div id="cursor" aria-hidden="true"></div>
+  <div id="cursor-follower" aria-hidden="true"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Home">PT</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+          <i class="fa-solid fa-sun" id="theme-icon"></i>
+        </button>
+        <a href="#contact" class="btn btn-sm">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero" aria-label="Hero section">
+    <!-- Animated background canvas -->
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+    <!-- Floating orbs -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+
+      <h1 class="hero-name reveal-up">
+        <span class="name-line">Paul</span>
+        <span class="name-line accent-gradient">Thomas</span>
+      </h1>
+
+      <div class="hero-role reveal-up">
+        <span class="role-prefix">I build </span>
+        <span class="typed-wrapper">
+          <span id="typed-text" class="typed-text"></span>
+          <span class="typed-cursor" aria-hidden="true">|</span>
+        </span>
+      </div>
+
+      <p class="hero-tagline reveal-up">
+        Kernel and Device Drivers & Creative Technologist crafting<br class="br-desktop" />
+        digital experiences that blend beauty with performance.
+      </p>
+
+      <div class="hero-cta reveal-up">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <span>Let's Talk</span>
+        </a>
+      </div>
+
+      <div class="hero-stats reveal-up">
+        <div class="stat">
+          <span class="stat-num" data-count="5">0</span><span class="stat-sym">+</span>
+          <span class="stat-label">Years Exp.</span>
         </div>
-        <section id="projects" class="child">
-            <div class="container">
-                <div class="heading">
-                    <h2>Projects</h2>
-                    <p>Here are some of the projects I've worked on</p>
-                </div>
-                <div class="line"></div>
-                <div class="project-grid">
-                    <div class="project-card" onclick="flipCard(this)">
-                        <div class="project-inner">
-                            <div class="project-front">
-                                <img src="project1.png" alt="Project 1">
-                                <h3>Exam Guard</h3>
-                            </div>
-                            <div class="project-back">
-                                <h3>Exam Guard</h3>
-                                <p>Developed Offline Lab Exam Monitoring System, resulting in a 50%
-                                    reduction in exam irregularities and enhancing exam integrity by 75%
-                                    through robust security measures.
-                                    Streamlined exam processes through comprehensive monitoring
-                                    functionalities, reducing exam administration time by 40%.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card" onclick="flipCard(this)">
-                        <div class="project-inner">
-                            <div class="project-front">
-                                <img src="project2.png" alt="Project 2">
-                                <h3>Sign Language Recognition system</h3>
-                            </div>
-                            <div class="project-back">
-                                <h3>Sign Language Recognition system</h3>
-                                <p>Created a Sign Language Recognition system leveraging OpenCV
-                                    and Gesture Recognition technology, achieving a recognition
-                                    accuracy of over 95%.
-                                    Reducing the time required for sign language translation by 50%
-                                    compared to previous methods.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card" onclick="flipCard(this)">
-                        <div class="project-inner">
-                            <div class="project-front">
-                                <img src="project3.png" alt="Project 3">
-                                <h3>Brahma '24 Webpage</h3>
-                            </div>
-                            <div class="project-back">
-                                <h3>Brahma '24 Webpage</h3>
-                                <p>brahma24.live</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="42">0</span><span class="stat-sym">+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="18">0</span><span class="stat-sym">+</span>
+          <span class="stat-label">Clients</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-label="Scroll down">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="about section" aria-label="About me">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-up">01 / About</span>
+        <h2 class="section-title reveal-up">The Person<br/><em>Behind the Code</em></h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: Portrait -->
+        <div class="about-visual reveal-left">
+          <div class="portrait-frame">
+            <div class="portrait-placeholder">
+              <div class="portrait-initials">PT</div>
+              <div class="portrait-ring"></div>
+              <div class="portrait-ring ring-2"></div>
             </div>
-        </section>
-        <script>
-            function flipCard(card) {
-                card.classList.toggle('flipped');
-            }
-        </script>
-        <footer id="footer">
-            <h4>Don't forget to follow me</h4>
-            <a href="https://github.com/PaulThomas20002"><i class="fab fa-github"></i></a>
-            <a href="mailto:paulthomas.site@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.instagram.com/paul_thomas_20002/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/paulthomas20002/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/PaulTho68558295"><i class="fa-brands fa-x-twitter"></i></a>
-        </footer>
-        <script src="./js/index.js"></script>
-        <script src="https://kit.fontawesome.com/025c12b0bf.js" crossorigin="anonymous"></script>
-    </body>
+            <div class="portrait-badge">
+              <i class="fa-solid fa-code"></i>
+              <span>Full Stack</span>
+            </div>
+          </div>
+          <div class="about-card glass-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Bengaluru, IND</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="about-content reveal-right">
+          <p class="about-bio">
+            I'm a passionate <strong>Kernel Developer</strong> with 1.5+ years of experience building scalable, high-performance web applications. I thrive at the intersection of <em>design and engineering</em> — crafting interfaces that feel as good as they work.
+          </p>
+          <p class="about-bio">
+            When I'm not writing code, I'm exploring design systems, contributing to open-source, and mentoring the next generation of developers.
+          </p>
+
+          <!-- Skills -->
+          <div class="skills-section">
+            <h3 class="skills-title">Core Expertise</h3>
+            <div class="skills-grid">
+              <div class="skill-pill"><i class="fa-brands fa-react"></i> Kernel</div>
+              <div class="skill-pill"><i class="fa-brands fa-react"></i> Device Drivers</div>             
+              <div class="skill-pill"><i class="fa-brands fa-react"></i> React</div>
+              <div class="skill-pill"><i class="fa-brands fa-node-js"></i> Node.js</div>
+              <div class="skill-pill"><i class="fa-solid fa-database"></i> PostgreSQL</div>
+              <div class="skill-pill"><i class="fa-brands fa-python"></i> Python</div>
+              <div class="skill-pill"><i class="fa-solid fa-cloud"></i> AWS</div>
+              <div class="skill-pill"><i class="fa-brands fa-docker"></i> Docker</div>
+              <div class="skill-pill"><i class="fa-brands fa-js"></i> TypeScript</div>
+              <div class="skill-pill"><i class="fa-solid fa-wind"></i> Tailwind</div>
+            </div>
+          </div>
+
+          <!-- Proficiency bars -->
+          <div class="proficiency-list">
+            <div class="prof-item">
+              <div class="prof-header">
+                <span>Frontend Development</span><span class="prof-pct">95%</span>
+              </div>
+              <div class="prof-bar"><div class="prof-fill" data-width="95"></div></div>
+            </div>
+            <div class="prof-item">
+              <div class="prof-header">
+                <span>Backend & APIs</span><span class="prof-pct">88%</span>
+              </div>
+              <div class="prof-bar"><div class="prof-fill" data-width="88"></div></div>
+            </div>
+            <div class="prof-item">
+              <div class="prof-header">
+                <span>Cloud & DevOps</span><span class="prof-pct">80%</span>
+              </div>
+              <div class="prof-bar"><div class="prof-fill" data-width="80"></div></div>
+            </div>
+            <div class="prof-item">
+              <div class="prof-header">
+                <span>UI/UX Design</span><span class="prof-pct">75%</span>
+              </div>
+              <div class="prof-bar"><div class="prof-fill" data-width="75"></div></div>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-primary mt-2" download aria-label="Download resume">
+            <i class="fa-solid fa-download"></i>
+            <span>Download Resume</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="projects section" aria-label="Projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-up">02 / Work</span>
+        <h2 class="section-title reveal-up">Selected<br/><em>Projects</em></h2>
+        <p class="section-desc reveal-up">A curated selection of my most impactful work — each built with precision and purpose.</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs reveal-up" role="tablist" aria-label="Project filters">
+        <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-tab" data-filter="web" role="tab" aria-selected="false">Web App</button>
+        <button class="filter-tab" data-filter="mobile" role="tab" aria-selected="false">Mobile</button>
+        <button class="filter-tab" data-filter="oss" role="tab" aria-selected="false">Open Source</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Project 1 - Featured -->
+        <article class="project-card featured reveal-up" data-category="web" tabindex="0">
+          <div class="project-image">
+            <div class="project-thumb p-thumb-1">
+              <div class="thumb-gfx">
+                <div class="gfx-circle"></div>
+                <div class="gfx-line"></div>
+                <div class="gfx-line l2"></div>
+                <div class="gfx-dot"></div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" aria-label="View live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="overlay-btn" aria-label="View GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Web App</span>
+              <span class="project-tag">Featured</span>
+            </div>
+            <h3 class="project-title">NeuralDash Analytics</h3>
+            <p class="project-desc">Real-time analytics platform processing 10M+ events/day. Built with React, Node.js, and Redis for lightning-fast insights with a stunning visual interface.</p>
+            <div class="project-tech">
+              <span>React</span><span>Node.js</span><span>Redis</span><span>D3.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#" class="link-btn primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal-up" data-category="mobile" tabindex="0">
+          <div class="project-image">
+            <div class="project-thumb p-thumb-2">
+              <div class="thumb-gfx">
+                <div class="gfx-phone">
+                  <div class="phone-screen"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" aria-label="View live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="overlay-btn" aria-label="View GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Mobile</span>
+            </div>
+            <h3 class="project-title">FlowState App</h3>
+            <p class="project-desc">Cross-platform productivity app with AI-powered task prioritization. 50K+ downloads on launch week with 4.8★ rating.</p>
+            <div class="project-tech">
+              <span>React Native</span><span>Firebase</span><span>OpenAI</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#" class="link-btn primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal-up" data-category="oss" tabindex="0">
+          <div class="project-image">
+            <div class="project-thumb p-thumb-3">
+              <div class="thumb-gfx">
+                <div class="gfx-nodes">
+                  <div class="node n1"></div>
+                  <div class="node n2"></div>
+                  <div class="node n3"></div>
+                  <svg class="node-lines" viewBox="0 0 200 120" aria-hidden="true">
+                    <line x1="40" y1="60" x2="100" y2="30" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+                    <line x1="40" y1="60" x2="100" y2="90" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+                    <line x1="100" y1="30" x2="160" y2="60" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+                    <line x1="100" y1="90" x2="160" y2="60" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" aria-label="View live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="overlay-btn" aria-label="View GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Open Source</span>
+            </div>
+            <h3 class="project-title">GraphKit OSS</h3>
+            <p class="project-desc">Open-source graph visualization library with 2.4K GitHub stars. Declarative API for building interactive data relationship maps.</p>
+            <div class="project-tech">
+              <span>TypeScript</span><span>Canvas API</span><span>WebGL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#" class="link-btn primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Docs</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal-up" data-category="web" tabindex="0">
+          <div class="project-image">
+            <div class="project-thumb p-thumb-4">
+              <div class="thumb-gfx">
+                <div class="gfx-store">
+                  <div class="store-card sc1"></div>
+                  <div class="store-card sc2"></div>
+                  <div class="store-card sc3"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" aria-label="View live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="overlay-btn" aria-label="View GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Web App</span>
+            </div>
+            <h3 class="project-title">Mercado E-Commerce</h3>
+            <p class="project-desc">Headless e-commerce platform handling $2M+ in monthly transactions. Custom CMS, real-time inventory, and personalization engine.</p>
+            <div class="project-tech">
+              <span>Next.js</span><span>Sanity</span><span>Stripe</span><span>PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#" class="link-btn primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card reveal-up" data-category="web" tabindex="0">
+          <div class="project-image">
+            <div class="project-thumb p-thumb-5">
+              <div class="thumb-gfx">
+                <div class="gfx-ai">
+                  <div class="ai-ring r1"></div>
+                  <div class="ai-ring r2"></div>
+                  <div class="ai-core">AI</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" aria-label="View live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="overlay-btn" aria-label="View GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Web App</span>
+              <span class="project-tag">AI</span>
+            </div>
+            <h3 class="project-title">Lumina AI Studio</h3>
+            <p class="project-desc">Creative AI workspace for generating and editing images using diffusion models. Real-time collaboration with WebSockets.</p>
+            <div class="project-tech">
+              <span>Python</span><span>FastAPI</span><span>React</span><span>WebSockets</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#" class="link-btn primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card reveal-up" data-category="oss" tabindex="0">
+          <div class="project-image">
+            <div class="project-thumb p-thumb-6">
+              <div class="thumb-gfx">
+                <div class="gfx-cli">
+                  <div class="cli-line">$ deploy --env prod</div>
+                  <div class="cli-line success">✓ Build complete</div>
+                  <div class="cli-line">✓ Tests passed</div>
+                  <div class="cli-line dim">▶ Deploying...</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" aria-label="View live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="overlay-btn" aria-label="View GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Open Source</span>
+              <span class="project-tag">DevOps</span>
+            </div>
+            <h3 class="project-title">DeployKit CLI</h3>
+            <p class="project-desc">Zero-config deployment CLI tool for Node.js apps. Automatic SSL, rollbacks, and multi-region support. 800+ weekly npm downloads.</p>
+            <div class="project-tech">
+              <span>Node.js</span><span>Docker</span><span>Terraform</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#" class="link-btn primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> npm</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="experience section" aria-label="Work experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-up">03 / Experience</span>
+        <h2 class="section-title reveal-up">Career<br/><em>Journey</em></h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Job 3 -->
+        <div class="timeline-item reveal-up" tabindex="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tc-header">
+              <div class="tc-company-logo tc-logo-3">A</div>
+              <div class="tc-meta">
+                <h3 class="tc-role">Frontend Engineer</h3>
+                <div class="tc-company">Airbnb</div>
+              </div>
+              <div class="tc-period">
+                <span class="tc-date">2019 — 2021</span>
+              </div>
+            </div>
+            <ul class="tc-achievements" role="list">
+              <li>Re-architected search experience for 100M+ monthly users, boosting conversion 22%</li>
+              <li>Built component library with 80+ components adopted across 6 product teams</li>
+              <li>Led accessibility audit bringing platform to WCAG 2.1 AA compliance</li>
+            </ul>
+            <div class="tc-tech">
+              <span>React</span><span>GraphQL</span><span>Ruby on Rails</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="contact section" aria-label="Contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-up">04 / Contact</span>
+        <h2 class="section-title reveal-up">Let's Build<br/><em>Something Great</em></h2>
+        <p class="section-desc reveal-up">Open to freelance projects, full-time roles, and interesting collaborations.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info side -->
+        <div class="contact-info reveal-left">
+          <div class="contact-card glass-card">
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:Paul@example.com" class="contact-value">Paul@example.com</a>
+            </div>
+          </div>
+          <div class="contact-card glass-card">
+            <i class="fa-solid fa-location-dot contact-icon"></i>
+            <div>
+              <div class="contact-label">Location</div>
+              <span class="contact-value">Bengaluru, IND</span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter/X profile"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="Dribbble profile"><i class="fa-brands fa-dribbble"></i></a>
+          </div>
+        </div>
+
+        <!-- Form side -->
+        <div class="contact-form-wrapper reveal-right">
+          <div class="glass-card form-card">
+            <div id="form-success" class="form-success" aria-live="polite" hidden>
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Message sent! I'll get back to you within 24 hours.</p>
+            </div>
+            <div id="contact-form-inner">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <button type="button" class="btn btn-primary btn-full" id="send-btn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">PT</div>
+        <p class="footer-copy">© 2026 Paul Thomas. Crafted with <i class="fa-solid fa-heart" aria-label="love"></i> and <i class="fa-solid fa-mug-hot" aria-label="coffee"></i></p>
+        <div class="footer-links">
+          <a href="#hero">Top</a>
+          <a href="#projects">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
 </html>
