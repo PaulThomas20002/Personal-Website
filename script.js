@@ -247,7 +247,7 @@ function debounce(fn, delay) {
   const words = [
     'Web Experiences',
     'React Applications',
-    'Scalable APIs',
+    'Kernel Development',
     'Beautiful UIs',
     'Full-Stack Solutions',
     'Open Source Tools',
@@ -565,4 +565,4 @@ function debounce(fn, delay) {
 })();
 
 console.log('%cPaul Thomas Portfolio', 'font-family:monospace;font-size:1.2rem;color:#5b8af5;font-weight:bold;');
-console.log('%cBuilt with care. Let\'s connect! paul@example.com', 'color:#9aaac8;font-size:0.85rem;');
+console.log('%cBuilt with care. Let\'s connect! paulthomas20002@gmail.com', 'color:#9aaac8;font-size:0.85rem;');
